@@ -1,5 +1,6 @@
 #include "raylib.h"
 #include "physics.h"
+#include "Ball.h"
 
 int main() {
     int screenHeight = 800, screenWidth = 1080;
@@ -9,7 +10,7 @@ int main() {
 
     while (!WindowShouldClose()) {
         BeginDrawing();
-        ClearBackground(RAYWHITE);
+        ClearBackground(BLACK);
         EndDrawing();
     }
 

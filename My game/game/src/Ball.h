@@ -1,5 +1,4 @@
-#ifndef BALL_H
-#define BALL_H
+#pragma once
 
 class Ball {
 private:
@@ -31,5 +30,3 @@ public:
     void update();
     void applyForce(float force_x, float force_y);
 };
-
-#endif // BALL_H
