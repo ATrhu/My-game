@@ -25,6 +25,9 @@ public:
     void setY(float y);
     void setRadius(float r);
     void setMass(float m);
+    void setVelX(float v);
+    void setVelY(float v);
+
 
     // Movement methods
     void update();

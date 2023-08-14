@@ -1,6 +1,5 @@
-#ifndef PHYSICS_H
-#define PHYSICS_H
+#pragma once
 
 extern float gravityY;
 
-#endif // PHYSICS_H
+//bool isOutOfBounds(float x, float y, float radius);

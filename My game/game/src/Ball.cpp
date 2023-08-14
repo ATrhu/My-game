@@ -37,12 +37,25 @@ void Ball::setMass(float m) {
     mass = m;
 }
 
+void Ball::setVelX(float v) {
+    velocity_x = v;
+}
+
+void Ball::setVelY(float v) {
+    velocity_y = v;
+}
+
 void Ball::update() {
-    if (gravityY != 0) {
-        velocity_y += gravityY;
-    }  // Apply gravitational acceleration
+    if (position_x - radius <= 0 || position_x + radius >= 1920) {
+        velocity_x = -velocity_x;
+    }
+    if (position_y - radius <= 0 || position_y + radius >= 1000) {
+        velocity_y *= -1;
+    }
+    //velocity_y += gravityY;  // Apply gravitational acceleration
     position_x += velocity_x;
     position_y += velocity_y;
+
 }
 
 void Ball::applyForce(float force_x, float force_y) {
