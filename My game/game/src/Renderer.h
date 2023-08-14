@@ -1,3 +1,4 @@
+
 #pragma once
 
 #include "Ball.h"
@@ -5,5 +6,6 @@
 
 class Renderer {
 public:
+    // Method to draw a ball
     void draw(const Ball& ball);
 };

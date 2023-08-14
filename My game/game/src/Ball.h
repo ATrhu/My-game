@@ -1,3 +1,4 @@
+
 #pragma once
 
 class Ball {
@@ -10,24 +11,17 @@ private:
     float mass;
 
 public:
-    // Constructors
+    // Default constructor
     Ball();
-    Ball(float x, float y, float r);
+
+    // Parameterized constructor
+    Ball(float x, float y, float vel_x = 5.0f, float vel_y = 5.0f, float r = 20.0f);
 
     // Getter methods
     float getX() const;
     float getY() const;
     float getRadius() const;
     float getMass() const;
-
-    // Setter methods
-    void setX(float x);
-    void setY(float y);
-    void setRadius(float r);
-    void setMass(float m);
-    void setVelX(float v);
-    void setVelY(float v);
-
 
     // Movement methods
     void update();

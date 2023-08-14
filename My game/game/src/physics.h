@@ -1,5 +1,5 @@
+
 #pragma once
 
+// Gravity applied on the Y-axis
 extern float gravityY;
-
-//bool isOutOfBounds(float x, float y, float radius);
